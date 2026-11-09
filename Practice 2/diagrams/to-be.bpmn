@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_v1LXkb6lED-sAL3zm4dcPw" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+  <bpmn2:itemDefinition id="_Clarify_SkippableInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Clarify_PriorityInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Clarify_CommentInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Clarify_DescriptionInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Clarify_CreatedByInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Clarify_TaskNameInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Clarify_GroupIdInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Clarify_ContentInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Clarify_NotStartedReassignInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Clarify_NotCompletedReassignInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Clarify_NotStartedNotifyInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Clarify_NotCompletedNotifyInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Confirm_SkippableInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Confirm_PriorityInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Confirm_CommentInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Confirm_DescriptionInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Confirm_CreatedByInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Confirm_TaskNameInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Confirm_GroupIdInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Confirm_ContentInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Confirm_NotStartedReassignInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Confirm_NotCompletedReassignInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Confirm_NotStartedNotifyInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Confirm_NotCompletedNotifyInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_PurchaseCheck_SkippableInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_PurchaseCheck_PriorityInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_PurchaseCheck_CommentInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_PurchaseCheck_DescriptionInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_PurchaseCheck_CreatedByInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_PurchaseCheck_TaskNameInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_PurchaseCheck_GroupIdInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_PurchaseCheck_ContentInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_PurchaseCheck_NotStartedReassignInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_PurchaseCheck_NotCompletedReassignInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_PurchaseCheck_NotStartedNotifyInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_PurchaseCheck_NotCompletedNotifyInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Budget_SkippableInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Budget_PriorityInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Budget_CommentInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Budget_DescriptionInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Budget_CreatedByInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Budget_TaskNameInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Budget_GroupIdInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Budget_ContentInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Budget_NotStartedReassignInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Budget_NotCompletedReassignInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Budget_NotStartedNotifyInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Budget_NotCompletedNotifyInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Review_SkippableInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Review_PriorityInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Review_CommentInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Review_DescriptionInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Review_CreatedByInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Review_TaskNameInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Review_GroupIdInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Review_ContentInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Review_NotStartedReassignInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Review_NotCompletedReassignInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Review_NotStartedNotifyInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Review_NotCompletedNotifyInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Submit_SkippableInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Submit_PriorityInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Submit_CommentInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Submit_DescriptionInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Submit_CreatedByInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Submit_TaskNameInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Submit_GroupIdInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Submit_ContentInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Submit_NotStartedReassignInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Submit_NotCompletedReassignInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Submit_NotStartedNotifyInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="_Submit_NotCompletedNotifyInputXItem" structureRef="Object"/>
+  <bpmn2:collaboration id="_15AB89EC-1DF3-4D8D-94B2-5A8204577B8C" name="Default Collaboration">
+    <bpmn2:participant id="_DBCE4FEA-C9BA-4403-9714-B29311DFA635" name="Pool Participant" processRef="to_be"/>
+  </bpmn2:collaboration>
+  <bpmn2:process id="to_be" drools:packageName="com.example" drools:version="1.0" drools:adHoc="false" name="to-be" processType="Public">
+    <bpmn2:sequenceFlow id="F01" sourceRef="Start" targetRef="Submit"/>
+    <bpmn2:sequenceFlow id="F02" sourceRef="Submit" targetRef="Register"/>
+    <bpmn2:sequenceFlow id="F03" sourceRef="Register" targetRef="Review"/>
+    <bpmn2:sequenceFlow id="F04" sourceRef="Review" targetRef="LeaderDecision"/>
+    <bpmn2:sequenceFlow id="F05" name="Согласовать" sourceRef="LeaderDecision" targetRef="Budget">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Согласовать]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="http://www.java.com/java"><![CDATA[leaderDecision = approved]]></bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="F08" sourceRef="Budget" targetRef="BudgetDecision"/>
+    <bpmn2:sequenceFlow id="F09" name="Бюджет есть" sourceRef="BudgetDecision" targetRef="PurchaseCheck">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Бюджет есть]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="http://www.java.com/java"><![CDATA[budgetDecision = approved]]></bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="F12" sourceRef="PurchaseCheck" targetRef="Changed"/>
+    <bpmn2:sequenceFlow id="F13" name="Нет" sourceRef="Changed" targetRef="Purchase">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Нет]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="http://www.java.com/java"><![CDATA[conditionsChanged = false]]></bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="F16" sourceRef="Purchase" targetRef="Confirm"/>
+    <bpmn2:sequenceFlow id="F17" sourceRef="Confirm" targetRef="Close"/>
+    <bpmn2:sequenceFlow id="F18" sourceRef="Close" targetRef="Success"/>
+    <bpmn2:sequenceFlow id="F15" name="Повторное согласование" sourceRef="Clarify" targetRef="Review">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Повторное согласование]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="F06" name="Уточнить" sourceRef="LeaderDecision" targetRef="Clarify">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Уточнить]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="http://www.java.com/java"><![CDATA[leaderDecision = clarify]]></bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="F10" name="Уточнить / пересмотреть" sourceRef="BudgetDecision" targetRef="Clarify">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Уточнить / пересмотреть]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="http://www.java.com/java"><![CDATA[budgetDecision = clarify]]></bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="F14" name="Да" sourceRef="Changed" targetRef="Clarify">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Да]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="http://www.java.com/java"><![CDATA[conditionsChanged = true]]></bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="F07" name="Отказать" sourceRef="LeaderDecision" targetRef="Reject">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Отказать]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="http://www.java.com/java"><![CDATA[leaderDecision = rejected]]></bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="F11" name="Отказ / нет бюджета" sourceRef="BudgetDecision" targetRef="Reject">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Отказ / нет бюджета]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" language="http://www.java.com/java"><![CDATA[budgetDecision = rejected]]></bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="F19" sourceRef="Reject" targetRef="Denied"/>
+    <bpmn2:startEvent id="Start" name="Потребность">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Потребность]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:outgoing>F01</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:userTask id="Submit" name="Сотрудник:&#10;подать заявку">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Сотрудник:
+подать заявку]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>F01</bpmn2:incoming>
+      <bpmn2:outgoing>F02</bpmn2:outgoing>
+      <bpmn2:ioSpecification>
+        <bpmn2:dataInput id="Submit_TaskNameInputX" drools:dtype="Object" itemSubjectRef="_Submit_TaskNameInputXItem" name="TaskName"/>
+        <bpmn2:dataInput id="Submit_SkippableInputX" drools:dtype="Object" itemSubjectRef="_Submit_SkippableInputXItem" name="Skippable"/>
+        <bpmn2:inputSet>
+          <bpmn2:dataInputRefs>Submit_TaskNameInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>Submit_SkippableInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation>
+        <bpmn2:targetRef>Submit_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression"><![CDATA[Task]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression"><![CDATA[Submit_TaskNameInputX]]></bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation>
+        <bpmn2:targetRef>Submit_SkippableInputX</bpmn2:targetRef>
+        <bpmn2:assignment>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression"><![CDATA[false]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression"><![CDATA[Submit_SkippableInputX]]></bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:userTask>
+    <bpmn2:task id="Register" name="Система:&#10;проверить поля,&#10;зарегистрировать">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Система:
+проверить поля,
+зарегистрировать]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>F02</bpmn2:incoming>
+      <bpmn2:outgoing>F03</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:userTask id="Review" name="Руководитель:&#10;проверить заявку">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Руководитель:
+проверить заявку]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>F15</bpmn2:incoming>
+      <bpmn2:incoming>F03</bpmn2:incoming>
+      <bpmn2:outgoing>F04</bpmn2:outgoing>
+      <bpmn2:ioSpecification>
+        <bpmn2:dataInput id="Review_TaskNameInputX" drools:dtype="Object" itemSubjectRef="_Review_TaskNameInputXItem" name="TaskName"/>
+        <bpmn2:dataInput id="Review_SkippableInputX" drools:dtype="Object" itemSubjectRef="_Review_SkippableInputXItem" name="Skippable"/>
+        <bpmn2:inputSet>
+          <bpmn2:dataInputRefs>Review_TaskNameInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>Review_SkippableInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation>
+        <bpmn2:targetRef>Review_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression"><![CDATA[Task]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression"><![CDATA[Review_TaskNameInputX]]></bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation>
+        <bpmn2:targetRef>Review_SkippableInputX</bpmn2:targetRef>
+        <bpmn2:assignment>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression"><![CDATA[false]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression"><![CDATA[Review_SkippableInputX]]></bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:userTask>
+    <bpmn2:exclusiveGateway id="LeaderDecision" name="Решение&#10;руководителя" gatewayDirection="Diverging">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Решение
+руководителя]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>F04</bpmn2:incoming>
+      <bpmn2:outgoing>F07</bpmn2:outgoing>
+      <bpmn2:outgoing>F06</bpmn2:outgoing>
+      <bpmn2:outgoing>F05</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:userTask id="Budget" name="Бухгалтер:&#10;проверить бюджет">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Бухгалтер:
+проверить бюджет]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>F05</bpmn2:incoming>
+      <bpmn2:outgoing>F08</bpmn2:outgoing>
+      <bpmn2:ioSpecification>
+        <bpmn2:dataInput id="Budget_TaskNameInputX" drools:dtype="Object" itemSubjectRef="_Budget_TaskNameInputXItem" name="TaskName"/>
+        <bpmn2:dataInput id="Budget_SkippableInputX" drools:dtype="Object" itemSubjectRef="_Budget_SkippableInputXItem" name="Skippable"/>
+        <bpmn2:inputSet>
+          <bpmn2:dataInputRefs>Budget_TaskNameInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>Budget_SkippableInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation>
+        <bpmn2:targetRef>Budget_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression"><![CDATA[Task]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression"><![CDATA[Budget_TaskNameInputX]]></bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation>
+        <bpmn2:targetRef>Budget_SkippableInputX</bpmn2:targetRef>
+        <bpmn2:assignment>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression"><![CDATA[false]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression"><![CDATA[Budget_SkippableInputX]]></bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:userTask>
+    <bpmn2:exclusiveGateway id="BudgetDecision" name="Решение&#10;по бюджету" gatewayDirection="Diverging">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Решение
+по бюджету]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>F08</bpmn2:incoming>
+      <bpmn2:outgoing>F11</bpmn2:outgoing>
+      <bpmn2:outgoing>F10</bpmn2:outgoing>
+      <bpmn2:outgoing>F09</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:userTask id="PurchaseCheck" name="Закупщик:&#10;проверить условия">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Закупщик:
+проверить условия]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>F09</bpmn2:incoming>
+      <bpmn2:outgoing>F12</bpmn2:outgoing>
+      <bpmn2:ioSpecification>
+        <bpmn2:dataInput id="PurchaseCheck_TaskNameInputX" drools:dtype="Object" itemSubjectRef="_PurchaseCheck_TaskNameInputXItem" name="TaskName"/>
+        <bpmn2:dataInput id="PurchaseCheck_SkippableInputX" drools:dtype="Object" itemSubjectRef="_PurchaseCheck_SkippableInputXItem" name="Skippable"/>
+        <bpmn2:inputSet>
+          <bpmn2:dataInputRefs>PurchaseCheck_TaskNameInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>PurchaseCheck_SkippableInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation>
+        <bpmn2:targetRef>PurchaseCheck_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression"><![CDATA[Task]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression"><![CDATA[PurchaseCheck_TaskNameInputX]]></bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation>
+        <bpmn2:targetRef>PurchaseCheck_SkippableInputX</bpmn2:targetRef>
+        <bpmn2:assignment>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression"><![CDATA[false]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression"><![CDATA[PurchaseCheck_SkippableInputX]]></bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:userTask>
+    <bpmn2:exclusiveGateway id="Changed" name="Условия&#10;изменились?" gatewayDirection="Diverging">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Условия
+изменились?]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>F12</bpmn2:incoming>
+      <bpmn2:outgoing>F14</bpmn2:outgoing>
+      <bpmn2:outgoing>F13</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:task id="Purchase" name="Закупщик, бухгалтер:&#10;выполнить закупку&#10;и оплату">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Закупщик, бухгалтер:
+выполнить закупку
+и оплату]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>F13</bpmn2:incoming>
+      <bpmn2:outgoing>F16</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:userTask id="Confirm" name="Сотрудник:&#10;подтвердить получение">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Сотрудник:
+подтвердить получение]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>F16</bpmn2:incoming>
+      <bpmn2:outgoing>F17</bpmn2:outgoing>
+      <bpmn2:ioSpecification>
+        <bpmn2:dataInput id="Confirm_TaskNameInputX" drools:dtype="Object" itemSubjectRef="_Confirm_TaskNameInputXItem" name="TaskName"/>
+        <bpmn2:dataInput id="Confirm_SkippableInputX" drools:dtype="Object" itemSubjectRef="_Confirm_SkippableInputXItem" name="Skippable"/>
+        <bpmn2:inputSet>
+          <bpmn2:dataInputRefs>Confirm_TaskNameInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>Confirm_SkippableInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation>
+        <bpmn2:targetRef>Confirm_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression"><![CDATA[Task]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression"><![CDATA[Confirm_TaskNameInputX]]></bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation>
+        <bpmn2:targetRef>Confirm_SkippableInputX</bpmn2:targetRef>
+        <bpmn2:assignment>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression"><![CDATA[false]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression"><![CDATA[Confirm_SkippableInputX]]></bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:userTask>
+    <bpmn2:task id="Close" name="Система:&#10;закрыть и уведомить">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Система:
+закрыть и уведомить]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>F17</bpmn2:incoming>
+      <bpmn2:outgoing>F18</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:endEvent id="Success" name="Заявка закрыта">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Заявка закрыта]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>F18</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:userTask id="Clarify" name="Сотрудник:&#10;уточнить заявку">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Сотрудник:
+уточнить заявку]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>F14</bpmn2:incoming>
+      <bpmn2:incoming>F10</bpmn2:incoming>
+      <bpmn2:incoming>F06</bpmn2:incoming>
+      <bpmn2:outgoing>F15</bpmn2:outgoing>
+      <bpmn2:ioSpecification>
+        <bpmn2:dataInput id="Clarify_TaskNameInputX" drools:dtype="Object" itemSubjectRef="_Clarify_TaskNameInputXItem" name="TaskName"/>
+        <bpmn2:dataInput id="Clarify_SkippableInputX" drools:dtype="Object" itemSubjectRef="_Clarify_SkippableInputXItem" name="Skippable"/>
+        <bpmn2:inputSet>
+          <bpmn2:dataInputRefs>Clarify_TaskNameInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>Clarify_SkippableInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation>
+        <bpmn2:targetRef>Clarify_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression"><![CDATA[Task]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression"><![CDATA[Clarify_TaskNameInputX]]></bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation>
+        <bpmn2:targetRef>Clarify_SkippableInputX</bpmn2:targetRef>
+        <bpmn2:assignment>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression"><![CDATA[false]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression"><![CDATA[Clarify_SkippableInputX]]></bpmn2:to>
+        </bpmn2:assignment>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:userTask>
+    <bpmn2:task id="Reject" name="Система:&#10;отказать и уведомить">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Система:
+отказать и уведомить]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>F11</bpmn2:incoming>
+      <bpmn2:incoming>F07</bpmn2:incoming>
+      <bpmn2:outgoing>F19</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:endEvent id="Denied" name="Отказ">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Отказ]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>F19</bpmn2:incoming>
+    </bpmn2:endEvent>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram>
+    <bpmndi:BPMNPlane bpmnElement="to_be">
+      <bpmndi:BPMNShape id="shape_Denied" bpmnElement="Denied">
+        <dc:Bounds height="56" width="56" x="1182" y="902"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_Reject" bpmnElement="Reject">
+        <dc:Bounds height="100" width="260" x="1030" y="700"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_Clarify" bpmnElement="Clarify">
+        <dc:Bounds height="100" width="260" x="120" y="700"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_Success" bpmnElement="Success">
+        <dc:Bounds height="56" width="56" x="682" y="1582"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_Close" bpmnElement="Close">
+        <dc:Bounds height="80" width="260" x="570" y="1440"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_Confirm" bpmnElement="Confirm">
+        <dc:Bounds height="80" width="260" x="570" y="1290"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_Purchase" bpmnElement="Purchase">
+        <dc:Bounds height="90" width="260" x="570" y="1141"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_Changed" bpmnElement="Changed">
+        <dc:Bounds height="56" width="56" x="675" y="1025"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_PurchaseCheck" bpmnElement="PurchaseCheck">
+        <dc:Bounds height="80" width="260" x="570" y="900"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_BudgetDecision" bpmnElement="BudgetDecision">
+        <dc:Bounds height="56" width="56" x="675" y="785"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_Budget" bpmnElement="Budget">
+        <dc:Bounds height="80" width="260" x="570" y="660"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_LeaderDecision" bpmnElement="LeaderDecision">
+        <dc:Bounds height="56" width="56" x="675" y="545"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_Review" bpmnElement="Review">
+        <dc:Bounds height="80" width="260" x="570" y="420"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_Register" bpmnElement="Register">
+        <dc:Bounds height="80" width="260" x="570" y="300"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_Submit" bpmnElement="Submit">
+        <dc:Bounds height="80" width="260" x="570" y="180"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape_Start" bpmnElement="Start">
+        <dc:Bounds height="56" width="56" x="682" y="92"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="edge_shape_Reject_to_shape_Denied" bpmnElement="F19">
+        <di:waypoint x="1290" y="750"/>
+        <di:waypoint x="1340" y="750"/>
+        <di:waypoint x="1340" y="920"/>
+        <di:waypoint x="1218" y="920"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape_BudgetDecision_to_shape_Reject" bpmnElement="F11">
+        <di:waypoint x="725" y="810"/>
+        <di:waypoint x="900" y="810"/>
+        <di:waypoint x="900" y="765"/>
+        <di:waypoint x="1030" y="765"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape_LeaderDecision_to_shape_Reject" bpmnElement="F07">
+        <di:waypoint x="725" y="570"/>
+        <di:waypoint x="950" y="570"/>
+        <di:waypoint x="950" y="725"/>
+        <di:waypoint x="1030" y="725"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape_Changed_to_shape_Clarify" bpmnElement="F14">
+        <di:waypoint x="675" y="1050"/>
+        <di:waypoint x="400" y="1050"/>
+        <di:waypoint x="400" y="790"/>
+        <di:waypoint x="380" y="790"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape_BudgetDecision_to_shape_Clarify" bpmnElement="F10">
+        <di:waypoint x="675" y="810"/>
+        <di:waypoint x="450" y="810"/>
+        <di:waypoint x="450" y="765"/>
+        <di:waypoint x="380" y="765"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape_LeaderDecision_to_shape_Clarify" bpmnElement="F06">
+        <di:waypoint x="675" y="570"/>
+        <di:waypoint x="500" y="570"/>
+        <di:waypoint x="500" y="725"/>
+        <di:waypoint x="380" y="725"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape_Clarify_to_shape_Review" bpmnElement="F15">
+        <di:waypoint x="120" y="750"/>
+        <di:waypoint x="80" y="750"/>
+        <di:waypoint x="80" y="460"/>
+        <di:waypoint x="570" y="460"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape_Close_to_shape_Success" bpmnElement="F18">
+        <di:waypoint x="700" y="1520"/>
+        <di:waypoint x="700" y="1582"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape_Confirm_to_shape_Close" bpmnElement="F17">
+        <di:waypoint x="700" y="1370"/>
+        <di:waypoint x="700" y="1440"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape_Purchase_to_shape_Confirm" bpmnElement="F16">
+        <di:waypoint x="700" y="1231"/>
+        <di:waypoint x="700" y="1290"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape_Changed_to_shape_Purchase" bpmnElement="F13">
+        <di:waypoint x="700" y="1075"/>
+        <di:waypoint x="700" y="1141"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape_PurchaseCheck_to_shape_Changed" bpmnElement="F12">
+        <di:waypoint x="700" y="980"/>
+        <di:waypoint x="700" y="1025"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape_BudgetDecision_to_shape_PurchaseCheck" bpmnElement="F09">
+        <di:waypoint x="700" y="835"/>
+        <di:waypoint x="700" y="900"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape_Budget_to_shape_BudgetDecision" bpmnElement="F08">
+        <di:waypoint x="700" y="740"/>
+        <di:waypoint x="700" y="785"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape_LeaderDecision_to_shape_Budget" bpmnElement="F05">
+        <di:waypoint x="700" y="595"/>
+        <di:waypoint x="700" y="660"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape_Review_to_shape_LeaderDecision" bpmnElement="F04">
+        <di:waypoint x="700" y="500"/>
+        <di:waypoint x="700" y="545"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape_Register_to_shape_Review" bpmnElement="F03">
+        <di:waypoint x="700" y="380"/>
+        <di:waypoint x="700" y="420"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape_Submit_to_shape_Register" bpmnElement="F02">
+        <di:waypoint x="700" y="260"/>
+        <di:waypoint x="700" y="300"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape_Start_to_shape_Submit" bpmnElement="F01">
+        <di:waypoint x="700" y="128"/>
+        <di:waypoint x="700" y="180"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+  <bpmn2:relationship type="BPSimData">
+    <bpmn2:extensionElements>
+      <bpsim:BPSimData>
+        <bpsim:Scenario id="default" name="Simulationscenario">
+          <bpsim:ScenarioParameters/>
+          <bpsim:ElementParameters elementRef="Reject">
+            <bpsim:TimeParameters>
+              <bpsim:ProcessingTime>
+                <bpsim:NormalDistribution mean="0" standardDeviation="0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters>
+              <bpsim:Availability>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters>
+              <bpsim:UnitCost>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters elementRef="Clarify">
+            <bpsim:TimeParameters>
+              <bpsim:ProcessingTime>
+                <bpsim:NormalDistribution mean="0" standardDeviation="0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters>
+              <bpsim:Availability>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters>
+              <bpsim:UnitCost>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters elementRef="Close">
+            <bpsim:TimeParameters>
+              <bpsim:ProcessingTime>
+                <bpsim:NormalDistribution mean="0" standardDeviation="0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters>
+              <bpsim:Availability>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters>
+              <bpsim:UnitCost>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters elementRef="Confirm">
+            <bpsim:TimeParameters>
+              <bpsim:ProcessingTime>
+                <bpsim:NormalDistribution mean="0" standardDeviation="0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters>
+              <bpsim:Availability>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters>
+              <bpsim:UnitCost>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters elementRef="Purchase">
+            <bpsim:TimeParameters>
+              <bpsim:ProcessingTime>
+                <bpsim:NormalDistribution mean="0" standardDeviation="0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters>
+              <bpsim:Availability>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters>
+              <bpsim:UnitCost>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters elementRef="PurchaseCheck">
+            <bpsim:TimeParameters>
+              <bpsim:ProcessingTime>
+                <bpsim:NormalDistribution mean="0" standardDeviation="0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters>
+              <bpsim:Availability>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters>
+              <bpsim:UnitCost>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters elementRef="Budget">
+            <bpsim:TimeParameters>
+              <bpsim:ProcessingTime>
+                <bpsim:NormalDistribution mean="0" standardDeviation="0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters>
+              <bpsim:Availability>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters>
+              <bpsim:UnitCost>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters elementRef="Review">
+            <bpsim:TimeParameters>
+              <bpsim:ProcessingTime>
+                <bpsim:NormalDistribution mean="0" standardDeviation="0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters>
+              <bpsim:Availability>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters>
+              <bpsim:UnitCost>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters elementRef="Register">
+            <bpsim:TimeParameters>
+              <bpsim:ProcessingTime>
+                <bpsim:NormalDistribution mean="0" standardDeviation="0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters>
+              <bpsim:Availability>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters>
+              <bpsim:UnitCost>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters elementRef="Submit">
+            <bpsim:TimeParameters>
+              <bpsim:ProcessingTime>
+                <bpsim:NormalDistribution mean="0" standardDeviation="0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters>
+              <bpsim:Availability>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters>
+              <bpsim:UnitCost>
+                <bpsim:FloatingParameter value="0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters elementRef="Start">
+            <bpsim:TimeParameters>
+              <bpsim:ProcessingTime>
+                <bpsim:NormalDistribution mean="0" standardDeviation="0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+          </bpsim:ElementParameters>
+        </bpsim:Scenario>
+      </bpsim:BPSimData>
+    </bpmn2:extensionElements>
+    <bpmn2:source>_v1LXkb6lED-sAL3zm4dcPw</bpmn2:source>
+    <bpmn2:target>_v1LXkb6lED-sAL3zm4dcPw</bpmn2:target>
+  </bpmn2:relationship>
+</bpmn2:definitions>
