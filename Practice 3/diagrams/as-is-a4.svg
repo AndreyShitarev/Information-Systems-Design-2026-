@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1100" viewBox="0 0 2400 1100">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#18232d"/></marker></defs>
+<rect width="2400" height="1100" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#18232d" font-size="23">
+<text x="1200" y="48" text-anchor="middle" font-size="30">Выполнить закупку</text>
+<text x="1200" y="87" text-anchor="middle" font-size="22">Второй уровень IDEF0 · блок A4 · до внедрения системы</text>
+<text x="40" y="150">Порядок согласования</text><text x="40" y="242">Бюджет и лимиты расходов</text>
+<g fill="none" stroke="#18232d" stroke-width="2.5">
+<path d="M40 180 H1860"/><path d="M40 270 H1930"/>
+<path d="M480 180 V480 M940 180 V480 M1400 180 V480 M1860 180 V480" marker-end="url(#arrow)"/>
+<path d="M550 270 V480 M1010 270 V480 M1470 270 V480 M1930 270 V480" marker-end="url(#arrow)"/>
+</g>
+<g fill="#18232d"><circle cx="480" cy="180" r="4"/><circle cx="940" cy="180" r="4"/><circle cx="1400" cy="180" r="4"/><circle cx="550" cy="270" r="4"/><circle cx="1010" cy="270" r="4"/><circle cx="1470" cy="270" r="4"/></g>
+<g fill="white" stroke="#18232d" stroke-width="3"><rect x="340" y="480" width="280" height="180"/><rect x="800" y="480" width="280" height="180"/><rect x="1260" y="480" width="280" height="180"/><rect x="1720" y="480" width="280" height="180"/></g>
+<g font-size="25" text-anchor="middle">
+<text x="480" y="549">Выбрать</text><text x="480" y="587">поставщика</text>
+<text x="940" y="549">Оформить</text><text x="940" y="587">заказ</text>
+<text x="1400" y="549">Оплатить</text><text x="1400" y="587">закупку</text>
+<text x="1860" y="549">Организовать</text><text x="1860" y="587">получение</text>
+</g>
+<g font-size="21" text-anchor="end"><text x="600" y="639">1</text><text x="1060" y="639">2</text><text x="1520" y="639">3</text><text x="1980" y="639">4</text></g>
+<g fill="none" stroke="#18232d" stroke-width="2.5" marker-end="url(#arrow)">
+<path d="M40 590 H340"/>
+<path d="M40 390 H1200 V530 H1260"/><path d="M280 390 V530 H340"/>
+<path d="M620 590 H800"/><path d="M1080 590 H1260"/><path d="M1540 590 H1720"/>
+<path d="M2000 530 H2360"/><path d="M2000 610 H2360"/>
+<path d="M480 865 V660"/><path d="M940 865 V660"/><path d="M1400 865 V660"/><path d="M1860 865 V660"/>
+</g>
+<circle cx="280" cy="390" r="4" fill="#18232d"/>
+<text x="40" y="552">Допуск к закупке</text>
+<text x="40" y="330">Предложения и документы</text><text x="40" y="362">поставщика</text>
+<g text-anchor="middle" font-size="20">
+<text x="710" y="538">Выбранное</text><text x="710" y="568">предложение</text>
+<text x="1170" y="560" font-size="18">Оформленный</text><text x="1170" y="582" font-size="18">заказ</text>
+<text x="1630" y="538">Оплата</text><text x="1630" y="568">подтверждена</text>
+</g>
+<text x="2050" y="480" font-size="21">Закупленные товары</text><text x="2050" y="510" font-size="21">или услуги</text>
+<text x="2050" y="583" font-size="21">Сведения о закупке</text>
+<g text-anchor="middle" font-size="21">
+<text x="480" y="908">Закупщик, поставщик</text><text x="480" y="942">Почта</text>
+<text x="940" y="908">Закупщик, поставщик</text><text x="940" y="942">Почта, Excel</text>
+<text x="1400" y="908">Бухгалтер</text><text x="1400" y="942">Почта, Excel</text>
+<text x="1860" y="908">Закупщик, поставщик</text><text x="1860" y="942">Почта</text>
+</g>
+<text x="40" y="1058" font-size="21">Узел: A4 · декомпозиция блока 4 диаграммы A0</text>
+<text x="2360" y="1058" text-anchor="end" font-size="21">Блоки A41–A44</text>
+</g></svg>
